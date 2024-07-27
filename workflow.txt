@@ -1,0 +1,101 @@
+we have index.html inside public act as base for and provide root element 
+in index.js inside src we attach <App/> to root element 
+
+
+component folder
+-> it will contain all component that we will be using 
+
+
+here we have style-config
+-> here we have mixins.scss contains all scss component which will be used more than once 
+-> used for make responsive website 
+
+variable.scss
+-> contains name of all color that we will be using throughout the file 
+
+we are uploading images file in src folder
+it will contain all images required thorought the project 
+
+then we will use it for setting up for background for intro section and also c/s modify style.scss for intro section 
+
+we have vector-bg 
+it is basically image to provide background 
+
+navigation-bar (index.js and style.scss)
+-> it is used fro add logo and provide navigation link in intro section
+
+call to action folder inside component/shared 
+we will be required call to action at many place so we will define it one place 
+then we will import at various place 
+cal to action may be link contact me .. 
+
+
+let suppose we are calling a component then we can pass some argument 
+like text = "hello" this must be accepted as prop in org file in arg in curly braces 
+for destructuring and must also be put at required place in curly braces for destructring.
+
+
+since we have to use arrow at many place that's why we will make sepearte component for that
+
+first we have intro section in that we have logo and navigation link 
+then we have content section in this we will be having 
+girl image lorem ipsum text and various call to action button
+
+now we will use smalltext bigtext image and call to action
+
+
+glassmorphism effect is part of css so that it any component can be blended with background  and gives greater class
+
+now we will be having wrapper class so that it will be common with all section 
+
+now we will make portofolio section to add all project which will use section class as wrapper class
+then we will be using filter to add list of project of different domain 
+on clicking of them you will get list of project on that domain 
+for iteration we have to use map and must take a unique id 
+
+inside every folder we have index.js and style.scss 
+benefit is that when we are importing we don't have to write till index.js 
+we have to give path till parent folder
+
+whenever we click on any list item then there id should be stored 
+it can be achieved using two things [useState and onClick method]
+
+
+now we will use active class -> it will mark with class is active 
+here class refers to element of list [ie project -> all, web ,android .. ]
+
+active class -> when you click on that list item there will be white 
+background indicating that this class is Active
+
+
+showcase folder is used to present all project in icon form 
+all data will be fetched usign useStae 
+
+
+now we will filter out project based on project selected 
+we will also add some transition 
+
+now we will add other componet for blog section 
+we will be having two folder 
+blog and blog card 
+
+
+now we will be addinng contat  and contact-info folder 
+this will be used for email communication with the user 
+
+now we will be using form to send data to email 
+for sending data we will be using emailjs it provide interface so that we can send data to our email 
+
+toastify -> to show toast message 
+react-hook-form -> it is used for form validation
+
+Now we will be adding footer section 
+it will contain social media icons/links 
+and which will redirect to new page 
+
+we will also be using utils section 
+which generally contain reusable code 
+it helps in scrolling to pariticular section 
+with given id 
+at end there will be copyright section
+
